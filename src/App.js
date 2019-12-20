@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <TitleBanner />
+        <TitleBanner appTitle="Nombre App" />
         <Search getData={this.getData} />
         {this.state.cocktails.map(cocktail => {
           return (

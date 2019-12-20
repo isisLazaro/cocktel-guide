@@ -3,20 +3,20 @@ import styled from "styled-components";
 
 /* title component */
 const Title = styled.h1`
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
   color: palevioletred;
 `;
 
 /* wrapper component */
 const Wrapper = styled.section`
-  padding: 4em;
+  padding: 3em;
   background: papayawhip;
 `;
 
-const TitleBanner = () => (
+const TitleBanner = props => (
   <Wrapper>
-    <Title>TITULO APP</Title>
+    <Title>{props.appTitle}</Title>
   </Wrapper>
 );
 
