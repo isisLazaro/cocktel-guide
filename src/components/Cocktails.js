@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Cocktails = props => (
   <div>
@@ -7,7 +8,9 @@ const Cocktails = props => (
         <div key={cocktail.idDrink}>
           <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink}></img>
           <p>{cocktail.strDrink}</p>
-          <button>Receta</button>
+          <button>
+            <Link to={{ pathname: `/recipe/${cocktail.idDrink}` }}>Receta</Link>
+          </button>
         </div>
       );
     })}
