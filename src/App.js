@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import Search from "./components/Search";
 import TitleBanner from "./components/TitleBanner";
+import Search from "./components/Search";
+import Cocktails from "./components/Cocktails";
 
 class App extends Component {
   state = {
@@ -23,14 +24,15 @@ class App extends Component {
       <div>
         <TitleBanner appTitle="Nombre App" />
         <Search getData={this.getData} />
-        {this.state.cocktails.map(cocktail => {
+        <Cocktails cocktails={this.state.cocktails} />
+        {/* {this.state.cocktails.map(cocktail => {
           return (
             <div key={cocktail.idDrink}>
               <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink}></img>
               <p>{cocktail.strDrink}</p>
             </div>
           );
-        })}
+        })} */}
       </div>
     );
   }
