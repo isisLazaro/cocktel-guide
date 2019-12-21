@@ -9,7 +9,14 @@ const Cocktails = props => (
           <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink}></img>
           <p>{cocktail.strDrink}</p>
           <button>
-            <Link to={{ pathname: `/recipe/${cocktail.idDrink}` }}>Receta</Link>
+            <Link
+              to={{
+                pathname: `/recipe/${cocktail.idDrink}`,
+                state: { recipe: cocktail.idDrink }
+              }}
+            >
+              Receta
+            </Link>
           </button>
         </div>
       );
