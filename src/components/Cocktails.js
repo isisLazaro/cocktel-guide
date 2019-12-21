@@ -7,6 +7,7 @@ const Cocktails = props => (
         <div key={cocktail.idDrink}>
           <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink}></img>
           <p>{cocktail.strDrink}</p>
+          <button>Receta</button>
         </div>
       );
     })}
