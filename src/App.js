@@ -4,12 +4,13 @@ import "./App.css";
 import TitleBanner from "./components/TitleBanner";
 import Search from "./components/Search";
 import Cocktails from "./components/Cocktails";
+import Fetching from "./components/Fetching";
 
 class App extends Component {
   state = {
     cocktails: []
   };
-  getData = async e => {
+  /* getData = async e => {
     e.preventDefault();
     const cocktailName = e.target.elements.cocktailName.value;
     const api_call = await fetch(
@@ -18,12 +19,18 @@ class App extends Component {
     const data = await api_call.json();
     this.setState({ cocktails: data.drinks });
     console.log(this.state.cocktails);
+  }; */
+  componentDidMount = async () => {
+    const data = await Fetching(
+      `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=strawberry`
+    );
+    this.setState({ cocktails: data.drinks });
   };
   render() {
     return (
       <div>
         <TitleBanner appTitle="Nombre App" />
-        <Search getData={this.getData} />
+        {/* <Search getData={this.getData} /> */}
         <Cocktails cocktails={this.state.cocktails} />
         {/* {this.state.cocktails.map(cocktail => {
           return (
