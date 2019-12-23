@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Recipe extends React.Component {
   state = {
@@ -16,9 +17,16 @@ class Recipe extends React.Component {
   render() {
     const recipe = this.state.activeRecipe;
     return (
-      <div>
-        <p>{recipe.strInstructions}</p>
-      </div>
+      <section className="section">
+        <div className="container">
+          <p>{recipe.strInstructions}</p>
+          <p>
+            <button className="button">
+              <Link to="/"> back</Link>
+            </button>
+          </p>
+        </div>
+      </section>
     );
   }
 }
