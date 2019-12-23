@@ -17,24 +17,22 @@ const Button = styled.button.attrs(props => ({
 
 const Search = props => (
   <section className="section">
-    <div className="container">
-      <form onSubmit={props.getData}>
-        <label className="label">Search cocktail by name</label>
-        <div className="field has-addons  ">
-          <div className="control">
-            <Input
-              type="text"
-              name="cocktailName"
-              placeholder="ex. margarita"
-              required
-            />
-          </div>
-          <div className="control">
-            <Button className="button">Search</Button>
-          </div>
+    <form onSubmit={props.getData}>
+      <label className="label has-text-centered">Search cocktail by name</label>
+      <div className="field has-addons has-addons-centered  ">
+        <div className="control">
+          <Input
+            type="text"
+            name="cocktailName"
+            placeholder="ex. margarita"
+            required
+          />
         </div>
-      </form>
-    </div>
+        <div className="control">
+          <Button className="button">Search</Button>
+        </div>
+      </div>
+    </form>
   </section>
 );
 
