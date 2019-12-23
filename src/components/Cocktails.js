@@ -3,27 +3,22 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Button = styled.button.attrs(props => ({
-  className: "button"
+  className: "button "
 }))`
   color: white;
   background: palevioletred;
-  border: 1px solid palevioletred;
 `;
 
 const Cocktails = props =>
   props.cocktails.map(cocktail => {
     return (
-      <div className="card" key={cocktail.idDrink}>
+      <div className="column is-one-quarter" key={cocktail.idDrink}>
         <div className="card-image">
-          <figure>
-            <img
-              src={cocktail.strDrinkThumb}
-              alt={cocktail.strDrink}
-              width="250px"
-            />
+          <figure className="image">
+            <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
           </figure>
         </div>
-        <div className="card-content">
+        <div className="card-content has-text-centered">
           <p className="title is-5">{cocktail.strDrink}</p>
           <Button>
             <Link

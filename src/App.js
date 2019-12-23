@@ -39,7 +39,12 @@ class App extends Component {
         <TitleBanner appTitle="Nombre App" />
         {/* <Search getData={this.getData} /> */}
         <Search getData={this.getData} />
-        <Cocktails cocktails={this.state.cocktails} />
+        <div className="section">
+          <div className="columns is-multiline">
+            <Cocktails cocktails={this.state.cocktails} />
+          </div>
+        </div>
+
         {/* {this.state.cocktails.map(cocktail => {
           return (
             <div key={cocktail.idDrink}>
