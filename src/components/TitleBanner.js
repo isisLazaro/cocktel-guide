@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 /* title component */
 const Title = styled.h1`
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: bold;
   text-align: center;
   color: palevioletred;
 `;

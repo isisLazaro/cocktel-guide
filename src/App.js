@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <TitleBanner appTitle="Nombre App" />
+        <TitleBanner appTitle="Cocktail Guide 🍸" />
         {/* <Search getData={this.getData} /> */}
         <Search getData={this.getData} />
         <div className="section">
