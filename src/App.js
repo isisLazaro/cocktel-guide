@@ -17,6 +17,10 @@ class App extends Component {
     event.preventDefault();
     const cocktailName = event.target.elements.cocktailName.value;
     const data = await Fetching(`${SEARCH_BYNAME_ENDPOINT}${cocktailName}`);
+    if (data.drinks === null) {
+      data.drinks = [];
+    }
+    console.log(data.drinks);
     this.setState({ cocktails: data.drinks });
   };
 
