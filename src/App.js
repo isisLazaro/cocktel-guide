@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "bulma/css/bulma.css";
 
-import { SEARCH_BYNAME_ENDPOINT, DEFAULT_NAME } from "./components/Constants";
+import { SEARCH_BYNAME_ENDPOINT, DEFAULT_NAME } from "./constants/Constants";
 
 import TitleBanner from "./components/TitleBanner";
 import Search from "./components/Search";
 import Cocktails from "./components/Cocktails";
-import Fetching from "./components/Fetching";
+import Fetching from "./utils/Fetching";
 
 class App extends Component {
   state = {
