@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cocktel-guide/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/cocktel-guide/static/js/main.da6fa73e.chunk.js",
+    "main.js.map": "/cocktel-guide/static/js/main.da6fa73e.chunk.js.map",
+    "runtime-main.js": "/cocktel-guide/static/js/runtime-main.b2877620.js",
+    "runtime-main.js.map": "/cocktel-guide/static/js/runtime-main.b2877620.js.map",
+    "static/css/2.c4418c31.chunk.css": "/cocktel-guide/static/css/2.c4418c31.chunk.css",
+    "static/js/2.4dc5267b.chunk.js": "/cocktel-guide/static/js/2.4dc5267b.chunk.js",
+    "static/js/2.4dc5267b.chunk.js.map": "/cocktel-guide/static/js/2.4dc5267b.chunk.js.map",
+    "index.html": "/cocktel-guide/index.html",
+    "precache-manifest.37a207e9752f93587a31c28354c5fc4d.js": "/cocktel-guide/precache-manifest.37a207e9752f93587a31c28354c5fc4d.js",
+    "service-worker.js": "/cocktel-guide/service-worker.js",
+    "static/css/2.c4418c31.chunk.css.map": "/cocktel-guide/static/css/2.c4418c31.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/cocktel-guide/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.4dc5267b.chunk.js.LICENSE": "/cocktel-guide/static/js/2.4dc5267b.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2877620.js",
+    "static/css/2.c4418c31.chunk.css",
+    "static/js/2.4dc5267b.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.da6fa73e.chunk.js"
+  ]
+}
