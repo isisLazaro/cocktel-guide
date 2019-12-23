@@ -2,8 +2,8 @@ import React from "react";
 
 const Search = props => (
   <form onSubmit={props.getData}>
-    <input type="text" name="cocktailName"/>
-    <button>Buscar</button>
+    <input type="text" name="cocktailName" />
+    <button>Search</button>
   </form>
 );
 

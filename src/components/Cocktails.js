@@ -15,7 +15,7 @@ const Cocktails = props => (
                 state: { recipe: cocktail.idDrink }
               }}
             >
-              Receta
+              Recipe
             </Link>
           </button>
         </div>
